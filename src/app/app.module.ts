@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { AlreadyUserComponent } from './already-user/already-user.component';
 import { StockAdminComponent } from './stock-admin/stock-admin.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CategoriesComponent } from './categories/categories.component';
     LoginComponent,
     AlreadyUserComponent,
     StockAdminComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    AdminloginComponent
   ],
   imports: [
     BrowserModule,
