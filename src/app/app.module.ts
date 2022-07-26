@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AlreadyUserComponent } from './already-user/already-user.component';
 import { StockAdminComponent } from './stock-admin/stock-admin.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AlreadyUserComponent,
-    StockAdminComponent
+    StockAdminComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
