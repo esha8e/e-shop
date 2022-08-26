@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { AlreadyUserComponent } from './already-user/already-user.component';
+import { LoginComponent } from './login/login.component';
+import { NavigationpageComponent } from './navigationpage/navigationpage.component';
+const routes: Routes = [
+  {path:'login',component:LoginComponent},
+  {path:'navigationpage',component:NavigationpageComponent},
+  {path:'already-user',component:AlreadyUserComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
