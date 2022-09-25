@@ -18,7 +18,7 @@
 					<form #formnew="ngForm" (ngsubmit)="login()">
 						<h3>NEW USER!</h3>
 						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgemail"  name="e-mail" placeholder="E-MAIL">
-						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgpassword"  name="password" placeholder=" CREATE PASSWORD">
+						<input type="password" class="form-control" [(ngModel)]="loginpg.loginpgpassword"  name="password" placeholder=" CREATE PASSWORD">
 						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgphonenumber"  name="phonenumber" placeholder=" Phone Number">
 						<a routerLink="../Navigationpage">
 						<button class="submit">Sign-in</button></a>
