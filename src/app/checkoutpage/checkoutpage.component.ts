@@ -12,4 +12,7 @@ export class CheckoutpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+  
 }

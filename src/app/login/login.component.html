@@ -1,60 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.component.css">
 </head>
-<body align="center">
-   <h6 size="50" align="center"><u><b>NEW LOGIN</b></u></h6> 
 
-
-<form class="row g-3">
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Check me out
-        </label>
-      </div>
-    </div>
-    <div class="col-12">
-      <a routerLink="../navigationpage">
-      <button type="submit" class="btn btn-primary">Sign in</button></a>
-    </div>
-      
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">ALREADY USER !</a></li>
-          <li class="breadcrumb-item"><a href="#">STOCK ADMIN</a></li>
-          
-        </ol>
-      </nav>
-      
-  </form>
+<body>
+	<section class="login">
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
+				<div class="contact">
+					<form #formnew="ngForm" (ngsubmit)="login()">
+						<h3>NEW USER!</h3>
+						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgemail"  name="e-mail" placeholder="E-MAIL">
+						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgpassword"  name="password" placeholder=" CREATE PASSWORD">
+						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgphonenumber"  name="phonenumber" placeholder=" Phone Number">
+						<a routerLink="../Navigationpage">
+						<button class="submit">Sign-in</button></a>
+					</form>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+					<h5>A great company to work with!</h5>
+				</div>
+				<div class="right-inductor"><img src="" alt=""></div>
+			</div>
+		</div>
+	</section>
 </body>
+</html>
