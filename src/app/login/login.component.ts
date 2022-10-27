@@ -9,20 +9,23 @@ import { ProjectService } from '../project.service';
 export class LoginComponent implements OnInit {
 
   loginpg={
-    loginpgemail:"",
-    loginpgpassword:"",
-    loginpgphonenumber:""
+    loginemail:"",
+    loginpassword:""
   }
  
   constructor(private api:ProjectService) { }
 
   ngOnInit(): void {
   }
- login()
- {
-  this.api.Login(this.loginpg).subscribe((loginpg)=>{
+  Signup()
+  {
+    this.api.signup(this.loginpg).subscribe((loginpg)=>{
+     
+    })
+    alert("success")
+    
+    
+  }
 
-  })
-  alert("success");
- }
+ 
 }

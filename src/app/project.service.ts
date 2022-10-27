@@ -5,14 +5,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProjectService {
+  signin(loginpg: { loginemail: string; loginpassword: string; }) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private http:HttpClient) { }
 
-  Login(loginpg:any){
-    return this.http.post<any>("http://localhost:3000/login",loginpg)
+  signup(loginpg:any){
+    return this.http.get<any>("https://localhost:3000/Login",loginpg)
   }
 
-  
-
-  
+//signin(data:any){
+//  return this.http.post<any>("https://localhost:3000/signin",data)
+//}
 }

@@ -1,37 +1,19 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="login.component.css">
-</head>
-
-<body>
-	<section class="login">
-		<div class="login_box">
-			<div class="left">
-				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
-				<div class="contact">
-					<form #formnew="ngForm" (ngsubmit)="login()">
-						<h3>NEW USER!</h3>
-						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgemail"  name="e-mail" placeholder="E-MAIL">
-						<input type="password" class="form-control" [(ngModel)]="loginpg.loginpgpassword"  name="password" placeholder=" CREATE PASSWORD">
-						<input type="text" class="form-control" [(ngModel)]="loginpg.loginpgphonenumber"  name="phonenumber" placeholder=" Phone Number">
-						<a routerLink="../Navigationpage">
-						<button class="submit">Sign-in</button></a>
-					</form>
-				</div>
-			</div>
-			<div class="right">
-				<div class="right-text">
-					<h5>A great company to work with!</h5>
-				</div>
-				<div class="right-inductor"><img src="" alt=""></div>
-			</div>
-		</div>
-	</section>
-</body>
-</html>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-10">
+                <form #usersignup="ngForm" (ngSubmit)="Signup()" method="POST" action="/Login">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        
+                        <label for="" class="form label">EMAIL</label>
+                        <input type="text" class="form-control" [(ngModel)]="loginpg.loginemail" name="loginemail">
+                        <label for="" class="form label">PASSWORD</label>
+                        <input type="password" id="" class="form-control" [(ngModel)]="loginpg.loginpassword" name="loginpassword">
+                    
+                        <br><br><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">REGISTER</button>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+    </div>
