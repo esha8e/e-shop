@@ -1,19 +1,54 @@
-<div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-10">
-                <form #usersignup="ngForm" (ngSubmit)="Signup()" method="POST" action="/Login">
-                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        
-                        <label for="" class="form label">EMAIL</label>
-                        <input type="text" class="form-control" [(ngModel)]="loginpg.loginemail" name="loginemail">
-                        <label for="" class="form label">PASSWORD</label>
-                        <input type="password" id="" class="form-control" [(ngModel)]="loginpg.loginpassword" name="loginpassword">
-                    
-                        <br><br><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">REGISTER</button>
-                    </div>
-                </form>
-               
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Signup Form</title>
+		
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		
+<link rel="stylesheet" type="css" href="login.component.css">
+		
+</head>
+<body>
+	
+	<br>
+	<br>
+	<br>
+	<div class="container" >
+		<div class="row">
+		<div class="col-md-3">
+					
+		</div>
+				
+		<div class="col-md-6 main">
+					
+			<form action="/sign_up" method="post">
+					
+			<h1> Signup form </h1>
+							
+			<input class="box" type="text" name="name" id="name"	placeholder="Name" required /><br>
+							
+			<input class="box" type="email" name="email" id="email"
+			placeholder="E-Mail " required /><br>
+							
+			<input class="box" type="password" name="password"
+			id="password" placeholder="Password " required/><br>
+							
+			<input class="box" type="text" name="phone" id="phone"
+			placeholder="Phone Number " required/><br>
+						<br>
+                        <a routerLink="../signup-success">	<input type="submit" id="submitDetails" name="submitDetails" value="Submit"  /><br></a>
+					
+			</form>
+					
+		</div>
+				
+				
+		<div class="col-md-3">
+		</div>
+				
+	</div>
+	</div>
+</body>
+</html>	

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../project.service';
+
 
 @Component({
   selector: 'app-login',
@@ -8,24 +8,13 @@ import { ProjectService } from '../project.service';
 })
 export class LoginComponent implements OnInit {
 
-  loginpg={
-    loginemail:"",
-    loginpassword:""
-  }
+  
  
-  constructor(private api:ProjectService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  Signup()
-  {
-    this.api.signup(this.loginpg).subscribe((loginpg)=>{
-     
-    })
-    alert("success")
-    
-    
-  }
+ 
 
  
 }

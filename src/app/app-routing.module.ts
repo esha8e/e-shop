@@ -11,11 +11,12 @@ import {InstantfoodComponent} from './instantfood/instantfood.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CartComponent } from './cart/cart.component';
 import {LastpgComponent} from './lastpg/lastpg.component';
+import { SignupSuccessComponent } from './signup-success/signup-success.component';
 
 
 const routes: Routes = [ 
-  {path:'',component:FrontpageComponent},
-  {path:'Login',component:LoginComponent},
+  {path:'',component:LoginComponent},
+  {path:'Frontpage',component:FrontpageComponent},
   {path :"Homepage",component:HomepageComponent},
   {path:'Beverages',component:BeveragesComponent},
   {path:'Checkoutpage',component:CheckoutpageComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'Fruit',component:FruitComponent},
   {path:'Instantfood',component:InstantfoodComponent},
   {path:'Cart',component:CartComponent},
-  {path:'Lastpg',component:LastpgComponent}
+  {path:'Lastpg',component:LastpgComponent},
+  {path:'signup-success',component:SignupSuccessComponent}
 ];
 
 @NgModule({

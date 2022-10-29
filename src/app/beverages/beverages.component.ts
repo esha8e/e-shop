@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../cart.service';
-import { ProjectService } from '../project.service';
+
 
 @Component({
   selector: 'app-beverages',
@@ -15,7 +14,7 @@ export class BeveragesComponent implements OnInit {
 
  
 
-  constructor(private api: ProjectService,private cartService:CartService) { }
+  constructor() { }
 
   ngOnInit(): void {
   

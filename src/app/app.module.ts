@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LastpgComponent } from './lastpg/lastpg.component';
+import { SignupSuccessComponent } from './signup-success/signup-success.component';
 
 
 
@@ -33,6 +34,7 @@ import { LastpgComponent } from './lastpg/lastpg.component';
     InstantfoodComponent,
     HomepageComponent,
     LastpgComponent,
+    SignupSuccessComponent,
   
     
    
